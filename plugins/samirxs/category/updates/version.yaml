@@ -48,3 +48,9 @@
 1.0.17:
     - 'Updated table samirxs_category_products'
     - builder_table_update_samirxs_category_products_5.php
+1.0.18:
+    - 'Updated table samirxs_category_'
+    - builder_table_update_samirxs_category__3.php
+1.0.19:
+    - 'Updated table samirxs_category_'
+    - builder_table_update_samirxs_category__4.php

@@ -5,36 +5,8 @@ import { useTransition, animated } from "react-spring";
 import NavigationMenu from "./NavigationMenu";
 import axios from 'axios';
 
-function Navigation() {
+function Navigation({category}) {
 	const [showMenu, setShowMenu] = useState(false);
-	const [category, setCategory] = useState(null);
-
-	const url = `http://edouniforma.test/api/categories`;
-
-	function makeTree(data) {
-		let tree = [];
-		let mata = data.slice();
-		for (let obj of mata) {
-			if (!obj["parent_id"]) {
-				tree[obj.id] = obj;
-			} else {
-				if (mata[obj["parent_id"] - 1]["childs"]) {
-					mata[obj["parent_id"] - 1]["childs"][obj.id] = obj;
-				} else {
-					mata[obj["parent_id"] - 1]["childs"] = [];
-				}
-			}
-		}
-		return tree;
-	}
-
-	useEffect(() => {
-	axios.get(url).then((response) => { 
-		setCategory(response.data);
-		setCategory(p => (makeTree(p)));
-	});
-
-	}, [url]);
 
 	const maskTransitions = useTransition(showMenu, null, {
 		from: { position: "absolute", opacity: 0 },

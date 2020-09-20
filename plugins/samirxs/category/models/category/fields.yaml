@@ -10,3 +10,27 @@ tabs:
             span: auto
             type: number
             tab: 'Tab 1'
+        product_yes:
+            label: 'Ən Son Kateqoriyadır?'
+            span: auto
+            default: 0
+            disabled: 0
+            type: switch
+            tab: 'Tab 1'
+        img:
+            label: 'Kateqoriya Fotosu'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Tab 1'
+        description:
+            label: 'Əlavə Məlumat'
+            span: full
+            type: text
+            tab: 'Tab 1'

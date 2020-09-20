@@ -46,18 +46,18 @@ function InNavBar({ setShowMenu, category }) {
 	if (category) {
 		
 		const getMenu = (category) => {
-			return	category.map(tree => (<CatToTemp treeArr={tree} key={tree.id} />) );
+			return	category.map(tree => (tree ? (<CatToTemp treeArr={tree} key={tree.id} />) : null) );
 		}
 
 		const CatToTemp = ({treeArr}) => {
-			return <TempTree Tree={Tree} treeArr={treeArr} getMenu={getMenu}  />;
+			return <TempTree setShowMenu={setShowMenu} Tree={Tree} treeArr={treeArr} getMenu={getMenu}  />;
 		}
 
 		return (
 			<div>
 				{getMenu(category)}
-				<Tree name={<Link onClick={() => setShowMenu(false)} to="about">Haqqımızda</Link>}></Tree>
-				<Tree name={<Link onClick={() => setShowMenu(false)} to="contact">Əlaqə</Link>}></Tree>
+				<Tree name={<Link onClick={() => setShowMenu(false)} to="/about">Haqqımızda</Link>}></Tree>
+				<Tree name={<Link onClick={() => setShowMenu(false)} to="/contact">Əlaqə</Link>}></Tree>
 			</div>
 		);
 	}

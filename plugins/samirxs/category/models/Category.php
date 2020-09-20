@@ -34,4 +34,9 @@ class Category extends Model
             'order' => 'title',
         ]
     ];
+
+
+    public $attachOne = [
+        'img' => 'System\Models\File'
+    ];
 }

@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import labor from "../img/labor-day.png";
 import {Link} from "react-router-dom";
 
-function Header() {
+function Header({category}) {
 	return (
 		<header className=" bg-black ">
 			<div className="mx-auto px-4 pt-1 container">
@@ -17,7 +17,7 @@ function Header() {
 						</Link>
 						<img src={labor} alt="kaska" className="labor-logo pl-4" />
 					</div>
-					<Navigation />
+					<Navigation category={category} />
 				</div>
 			</div>
 		</header>
