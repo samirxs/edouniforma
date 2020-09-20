@@ -1,0 +1,12 @@
+tabs:
+    fields:
+        title:
+            label: 'Kateqoriya Adı'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+        parent_id:
+            label: 'Aid olduğu k. -ya id'
+            span: auto
+            type: number
+            tab: 'Tab 1'

@@ -1,0 +1,25 @@
+tabs:
+    fields:
+        title:
+            label: 'Slayd Başlığı'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+        description:
+            label: 'Slayd Yazısı'
+            span: full
+            size: ''
+            type: textarea
+            tab: 'Tab 1'
+        img:
+            label: Foto
+            span: auto
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            imageWidth: '800'
+            imageHeight: '200'
+            type: fileupload
+            tab: 'Tab 1'

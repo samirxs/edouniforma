@@ -1,0 +1,87 @@
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
+}
+
+.labor-logo {
+	max-height: 2.5rem;
+}
+
+.nav {
+	background: rgb(255, 250, 253);
+	background: -moz-radial-gradient(
+		circle,
+		rgba(255, 250, 253, 1) 0%,
+		rgba(233, 244, 255, 1) 100%
+	);
+	background: -webkit-radial-gradient(
+		circle,
+		rgba(255, 250, 253, 1) 0%,
+		rgba(233, 244, 255, 1) 100%
+	);
+	background: radial-gradient(
+		circle,
+		rgba(255, 250, 253, 1) 0%,
+		rgba(233, 244, 255, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffafd",endColorstr="#e9f4ff",GradientType=1);
+}
+
+.App {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*Card*/
+.c {
+	position: absolute;
+	max-width: 500px;
+	max-height: 500px;
+	width: 36ch;
+	height: 18ch;
+	cursor: pointer;
+	will-change: transform, opacity;
+	z-index: auto;
+	border-radius: 15px;
+}
+@media (min-width: 1024px) {
+	.c {
+		width: 50ch;
+		height: 25ch;
+	}
+}
+@media (max-width: 385px) {
+	.c {
+		width: 32ch;
+		height: 16ch;
+	}
+}
+.front,
+.back {
+	background-size: cover;
+}
+
+.back {
+	background-image: url(https://unsplash.com/photos/91AQt9p4Mo8);
+}
+
+.front {
+	background-image: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80&auto=format&fit=crop);
+}
+
+/*Arrows */
+
+.slick-next {
+	position: absolute;
+	right: 0;
+}

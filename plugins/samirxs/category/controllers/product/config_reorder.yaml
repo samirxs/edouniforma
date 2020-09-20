@@ -1,0 +1,4 @@
+title: Product
+modelClass: Samirxs\Category\Models\Product
+toolbar:
+    buttons: reorder_toolbar

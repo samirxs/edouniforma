@@ -1,0 +1,10 @@
+name: Slide
+form: $/samirxs/slider/models/slider/fields.yaml
+modelClass: Samirxs\Slider\Models\Slider
+defaultRedirect: samirxs/slider/slide
+create:
+    redirect: 'samirxs/slider/slide/update/:id'
+    redirectClose: samirxs/slider/slide
+update:
+    redirect: samirxs/slider/slide
+    redirectClose: samirxs/slider/slide

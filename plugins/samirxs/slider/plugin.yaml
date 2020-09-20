@@ -1,0 +1,11 @@
+plugin:
+    name: 'samirxs.slider::lang.plugin.name'
+    description: 'samirxs.slider::lang.plugin.description'
+    author: samirxs
+    icon: oc-icon-bars
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Slayder
+        url: samirxs/slider/slide
+        icon: icon-bars

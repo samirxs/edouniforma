@@ -1,0 +1,10 @@
+name: Category
+form: $/samirxs/category/models/category/fields.yaml
+modelClass: Samirxs\Category\Models\Category
+defaultRedirect: samirxs/category/category
+create:
+    redirect: 'samirxs/category/category/update/:id'
+    redirectClose: samirxs/category/category
+update:
+    redirect: samirxs/category/category
+    redirectClose: samirxs/category/category

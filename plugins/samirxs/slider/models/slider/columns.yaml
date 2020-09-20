@@ -1,0 +1,9 @@
+columns:
+    title:
+        label: 'Slayd Başlığı'
+        type: text
+        searchable: true
+    description:
+        label: 'Slayd Yazısı'
+        type: text
+        searchable: true

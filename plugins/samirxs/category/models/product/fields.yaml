@@ -1,0 +1,38 @@
+tabs:
+    fields:
+        title:
+            label: 'Məhsul Adı'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+        code:
+            label: 'Məhsul Kodu'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+        description:
+            label: 'Məhsul İnfo'
+            size: ''
+            span: full
+            type: richeditor
+            tab: 'Tab 1'
+        category:
+            label: 'Kateqoriya İd'
+            nameFrom: title
+            descriptionFrom: description
+            select: 'IF(id > 17, title, '''')'
+            span: auto
+            type: relation
+            tab: 'Tab 1'
+        img:
+            label: Foto
+            span: auto
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            imageHeight: '100'
+            imageWidth: '100'
+            type: fileupload
+            tab: 'Tab 1'

@@ -1,0 +1,10 @@
+name: Product
+form: $/samirxs/category/models/product/fields.yaml
+modelClass: Samirxs\Category\Models\Product
+defaultRedirect: samirxs/category/product
+create:
+    redirect: 'samirxs/category/product/update/:id'
+    redirectClose: samirxs/category/product
+update:
+    redirect: samirxs/category/product
+    redirectClose: samirxs/category/product

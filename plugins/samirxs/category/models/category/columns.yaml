@@ -1,0 +1,14 @@
+columns:
+    id:
+        label: İd
+        type: number
+        searchable: true
+        sortable: true
+    parent_id:
+        label: 'Aid olduğu k. -ya id'
+        type: number
+        searchable: true
+    title:
+        label: 'Kateqoriya Adı'
+        type: text
+        searchable: true

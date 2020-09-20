@@ -1,0 +1,16 @@
+plugin:
+    name: 'samirxs.category::lang.plugin.name'
+    description: 'samirxs.category::lang.plugin.description'
+    author: samirxs
+    icon: oc-icon-list-alt
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Kateqoriya & Produkt'
+        url: samirxs/category/category
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-item:
+                label: Produktlar
+                url: samirxs/category/product
+                icon: icon-pencil-square
