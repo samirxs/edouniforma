@@ -17,7 +17,7 @@ tabs:
             disabled: 0
             type: switch
             tab: 'Tab 1'
-        img:
+        c_img:
             label: 'Kateqoriya Fotosu'
             mode: image
             imageWidth: '100'
@@ -32,5 +32,6 @@ tabs:
         description:
             label: 'Əlavə Məlumat'
             span: full
-            type: text
+            size: ''
+            type: richeditor
             tab: 'Tab 1'

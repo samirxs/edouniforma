@@ -24,7 +24,7 @@ tabs:
             span: auto
             type: relation
             tab: 'Tab 1'
-        img:
+        p_img:
             label: Foto
             span: auto
             mode: image

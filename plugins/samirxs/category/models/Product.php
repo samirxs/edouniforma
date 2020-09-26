@@ -41,7 +41,7 @@ class Product extends Model
     ];
 
     public $attachMany = [
-        'img' => 'System\Models\File'
+        'p_img' => 'System\Models\File'
     ];
 
 }

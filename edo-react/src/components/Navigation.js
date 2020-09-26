@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTransition, animated } from "react-spring";
 import NavigationMenu from "./NavigationMenu";
-import axios from 'axios';
 
 function Navigation({category}) {
 	const [showMenu, setShowMenu] = useState(false);

@@ -37,6 +37,6 @@ class Category extends Model
 
 
     public $attachOne = [
-        'img' => 'System\Models\File'
+        'c_img' => 'System\Models\File'
     ];
 }
